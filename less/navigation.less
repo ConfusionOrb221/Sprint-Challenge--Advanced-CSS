@@ -1,7 +1,11 @@
 // Navigation code here
 .header{
+    position: fixed;
+    top: 0;
+    width: 100%;
     .col-flex-center();
     background-color: @nav-bg;
+    opacity: .8;
     .font-color();
     div{
         width: 100%;
@@ -20,4 +24,16 @@
         }
     }
     padding: 0 0 1% 0;
+    @media @phone{
+        div{
+            h1{
+                font-size: 3.5rem;
+            }
+        }
+        nav{
+            a{
+                font-size: 1.5rem;
+            }
+        }
+    }
 }
