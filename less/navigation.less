@@ -37,3 +37,41 @@
         }
     }
 }
+
+.invisble {
+    visibility: hidden;
+    width: 100%;
+    .col-flex-center();
+    background-color: @nav-bg;
+    opacity: .8;
+    .font-color();
+    div{
+        width: 100%;
+        margin: 1%;
+        h1{
+            font-size: 4rem;
+        }
+    }
+    nav{
+        width: 100%;
+        a{
+            text-decoration: none;
+            .font-color();
+            font-size: 2rem;
+            margin: 0 1% 0 1%;
+        }
+    }
+    padding: 0 0 1% 0;
+    @media @phone{
+        div{
+            h1{
+                font-size: 3.5rem;
+            }
+        }
+        nav{
+            a{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
