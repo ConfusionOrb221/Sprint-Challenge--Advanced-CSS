@@ -15,7 +15,6 @@
     p {
       padding:0 15px;
     }
-  
   }
 
   .space-images {
@@ -28,6 +27,18 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    @media @phone {
+      img:nth-child(2){
+        display: none;
+      }
+      img:nth-child(3){
+        display: none;
+      }
+      img {
+        width: 100%;
+      }
     }
   }
 
@@ -62,12 +73,12 @@
       }
 
       .btn {
-        display: inline-block;
-        padding: 2% 5% 2% 5%;
-        background-color: @btn-bg-color;
-        color: white;
-        font-size: 2rem;
-        border-radius: 5px;
+        .btn-styling(2%, 5%, 5px, 2rem);
+      }
+
+      .btn:hover{
+        color: @btn-bg-color;
+        background-color: white;
       }
     }
 
@@ -79,6 +90,26 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+    }
+    @media @phone {
+      flex-direction: column;
+      margin: 0;
+      padding: 2%;
+      .walk-text{
+        width: 100%;
+        order: 2;
+        .btn{
+          display: block;
+          width: 100%;
+          text-align: center;
+          padding: 6%;
+          margin: 0 0 2% 0;
+        }
+      }
+      .walk-img{
+        width: 100%;
+        margin: 0;
       }
     }
   }

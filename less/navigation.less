@@ -1,10 +1,8 @@
 // Navigation code here
 .header{
-    display: flex;
-    flex-direction: column;
-    text-align:center;
+    .col-flex-center();
     background-color: @nav-bg;
-    color: @river-bend;
+    .font-color();
     div{
         width: 100%;
         margin: 1%;
@@ -12,14 +10,14 @@
            font-size: 4rem;
         }
     }
-
     nav{
         width: 100%;
         a{
             text-decoration: none;
-            color: @river-bend;
+            .font-color();
             font-size: 2rem;
             margin: 0 1% 0 1%;
         }
     }
+    padding: 0 0 1% 0;
 }
