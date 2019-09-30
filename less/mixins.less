@@ -1,1 +1,19 @@
 // Mixins Here
+.font-color{
+    color: @river-bend;
+}
+
+.col-flex-center{
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+}
+
+.btn-styling(@paddingupdown, @paddingleftright, @radius, @font-size){
+    display: inline-block;
+    padding: @paddingupdown @paddingleftright @paddingupdown @paddingleftright;
+    background-color: @btn-bg-color;
+    color: white;
+    font-size: @font-size;
+    border-radius: @radius;
+}
